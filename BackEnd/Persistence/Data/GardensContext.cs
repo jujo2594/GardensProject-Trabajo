@@ -9,6 +9,9 @@ using Microsoft.EntityFrameworkCore;
 namespace Persistence.Data;
 public class GardensContext : DbContext
 {
+    public object ClientWithPaymentDto;
+
+
     public GardensContext(DbContextOptions options) : base(options)
     {
     }

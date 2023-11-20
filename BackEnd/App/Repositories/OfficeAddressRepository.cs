@@ -15,4 +15,10 @@ public class OfficeAddressRepository : GenericRepository<OfficeAddress>, IOffice
     {
         _context = context;
     }
+
+    public Task<List<OfficeAddress>> GetCitiesWithOffices()
+    {
+        throw new NotImplementedException();
+    }
+
 }

@@ -26,7 +26,7 @@ namespace Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<PaymentDto>>> Get()
         {
-            var results = await _unitOfWork.OrderDetails.GetAllAsync();
+            var results = await _unitOfWork.Payments.GetAllAsync();
             return _mapper.Map<List<PaymentDto>>(results);
         }
 
